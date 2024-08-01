@@ -1,0 +1,116 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+@font-face{
+  font-family: 'Roboto';
+  src: url('fontes/Roboto-Regular.ttf') format('opentype');
+}
+
+
+body{
+  background: #3a7bd5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3a6073, #3a7bd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100% ;
+  height: 100vh ;
+}
+
+
+.formulario{
+  position: relative; /*Permiti usar posição top , left, bottom, right*/
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%); /*reposiciona um elemento na direção horizontal e/ou vertical -> centralizar*/
+  background: #fff;
+  border-radius: 10px;
+  padding: 60px;
+  width: min-content;/*largura mínima intrínseca do conteúdo*/
+  align-items: center;/* Alinhar os itens no centro*/
+  color: #2b344b;
+  box-shadow:  2px 2px #2c354d;/* O primeiro px é o do baixo e o segundo é do da direita */
+}
+
+.titulo{
+  font-size: 1.8em; /*Tamanho da font 1.8em equivale a 18 px!, */
+  margin-bottom: 10%;/*Margem de baixo*/
+}
+
+.input{
+  min-width: 200px;/*Margem de baixo*/
+  border-radius: 22px;
+  border: 2px #6f7e8a solid;
+  padding: 5px;/*Margem de baixo*/
+  margin: 0px 0px 12px -5px;/*top | right | bottom | left*/
+}
+
+
+.input input{
+  width: 88%;
+  border: none;
+  outline: none;
+  transform: translateY(-10%); 
+  font-size: 11pt;
+  color: #2b344b;
+}
+
+.botao{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.botao button {
+  flex-basis: 48%;
+  font-size: 16px;
+  background-color: #04bd7d;
+  color: #ffffff;
+  height: 40px;
+  border-radius: 10px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+
+}
+
+.grupo{
+  height: 250px;
+}
+
+button:hover{
+  background-color:#04e999 ;
+}
+
+.botao02 button{
+  flex-basis: 80%;
+  width: 95px;
+}
+
+img{
+  width: 300px;
+  height: 150px;
+  
+}
+
+main{
+  display: flex;
+  justify-content: center;
+}
+
+.Cursos{
+  min-width: 250px;/*Margem de baixo*/
+  border-radius: 22px;
+  border: 2px #6f7e8a solid;
+  padding: 5px;/*Margem de baixo*/
+  margin: 0px 0px 12px -5px;/*top | right | bottom | left*/ 
+}
+
+.Cursos .Cursos{
+  width: 88%;
+  border: none;
+  outline: none;
+  transform: translateY(-10%); 
+  font-size: 11pt;
+  color: #2b344b;
+}

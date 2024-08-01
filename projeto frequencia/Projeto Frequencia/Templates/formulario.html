@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <script src="https://kit.fontawesome.com/e31f944338.js" crossorigin="anonymous"></script>
+    <title>Registro de Frequência</title>
+</head>
+<body>
+    {% if error %}
+    <p style="color: red;">{{ error }}</p>
+    {% endif %}
+    <br>
+
+    <main>
+    <img src="../static/senac-logo-4__1_-removebg.png">
+    </main>
+    <br>
+
+    <div class = "formulario">
+        <form action="/frequencia.html" method="post" >
+            <h1 class = "titulo">Login</h1>
+            
+            <br>
+            <br>
+
+            <label for = "Matricula">Matricula</label>
+            <div class = "input">
+                <i class="fa-solid fa-user"></i>
+                <input type="number" name = "Matricula" id = "Matricula" placeholder="Matricula" >
+            </div>
+
+            <label for = "senha">Senha</label>
+            <div class = "input">
+                <i class="fa-solid fa-key"></i>
+                <input type="password" name = "senha" id = "senha" placeholder="password" >
+            </div>
+
+            <label for="curso">Curso:</label>
+                <select class="Cursos" name="curso">
+                    <option value="Programador de Sistemas">Programador de Sistemas</option>
+                    <option value="Adm.Banco de Dados">Adm.Banco de Dados</option>
+                    <option value="Programador Web">Programador Web</option>
+                </select><br><br>
+             
+            <div class = "esqueceu senha">
+                Esqueceu a sua senha? <a href="/esqueceu_senha.html">Clique aqui</a>
+            </div>
+            <br>
+    
+            <div class="botao">
+                <button type="submit" id="botao1">login</button>
+                <div class = "botao02">
+                    <a href="/cadastro.html"><button type="button" id ="botao2">cadastro</button></a>
+                </div>
+            </div>
+
+        </form>  
+    </div>
+
+</body>
+</html>
